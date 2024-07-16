@@ -4,13 +4,13 @@
   "version": "1.0.0",
   "type": "module",
   "files": ["dist"],
-  "main": "./dist/npm-test.umd.cjs",
-  "module": "./dist/npm-test.js",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/main.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/npm-test.js",
-      "require": "./dist/npm-test.umd.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
