@@ -1,2 +1,2 @@
-import VueComponentNpmExample from './VueComponentNpmExample.vue'
-export { VueComponentNpmExample }
+import WButton from './Button/WButton.vue'
+export { WButton }
