@@ -1,7 +1,7 @@
 {
   "name": "dope-lib",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "files": ["dist"],
   "main": "./dist/index.umd.cjs",
