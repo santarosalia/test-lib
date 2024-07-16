@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-defineProps({
-      msg: { type: String },
-      type: { type: String }
-    }
-)
+defineProps<{
+  msg?: string,
+  type?: string[]
+}>();
 
-const count = ref(0)
+const count = ref(0);
+
 </script>
 <template>
   <div class="card">
