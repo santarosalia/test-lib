@@ -6,7 +6,7 @@
   "files": ["dist"],
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
-  "types": "./dist/main.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -16,13 +16,14 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b --emitDeclarationOnly && vite build",
+    "build": "vite build && vue-tsc --emitDeclarationOnly ",
     "preview": "vite preview"
   },
   "dependencies": {
     "vue": "^3.4.29"
   },
   "devDependencies": {
+    "@types/node": "^18.7.18",
     "@vitejs/plugin-vue": "^5.0.5",
     "typescript": "^5.2.2",
     "vite": "^5.3.1",
