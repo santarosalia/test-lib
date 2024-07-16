@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 defineProps<{
   msg?: string,
-  type?: string[]
+  nameList?: string[]
 }>();
 
 const count = ref(0);
@@ -11,8 +11,8 @@ const count = ref(0);
 </script>
 <template>
   <div class="card">
-    <button type="button" @click="count++">
-      {{ msg }} {{ count }}
+    <button v-for="(name, i) in nameList" type="button" @click="count++">
+      {{ `${name} ${i}` }} {{ msg }} {{ count }}
     </button>
   </div>
 </template>

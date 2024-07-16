@@ -4,7 +4,7 @@ import { WButton } from "@lib";
 </script>
 
 <template>
-  <WButton :msg="'asd'" />
+  <WButton :msg="'asd'" :name-list="['a','b','c']"/>
 </template>
 
 <style scoped>
