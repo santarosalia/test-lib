@@ -1,0 +1,31 @@
+{
+  "name": "dope-lib",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/npm-test.umd.cjs",
+  "module": "./dist/npm-test.js",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/npm-test.js",
+      "require": "./dist/npm-test.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b --emitDeclarationOnly && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vue-tsc": "^2.0.21"
+  }
+}
