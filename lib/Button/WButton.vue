@@ -45,27 +45,27 @@ const button = computed(() => buttonList.find(btn => btn.variant === props.varia
 </script>
 <template>
   <button type="button">
-    {{ button.variant }}
+    {{ button?.variant }}
     <slot></slot>
   </button>
 </template>
 
 <style scoped>
 button {
-  color: v-bind('button.color.enable.text');
-  background-color: v-bind('button.color.enable.background');
+  color: v-bind('button?.color.enable.text');
+  background-color: v-bind('button?.color.enable.background');
   width: 250px;
   height: 50px;
   border-radius: 6px;
   border: none;
 
   &:hover {
-    color: v-bind('button.color.hover.text');
-    background-color: v-bind('button.color.hover.background');
+    color: v-bind('button?.color.hover.text');
+    background-color: v-bind('button?.color.hover.background');
   }
   &:disabled {
-    color: v-bind('button.color.disable.text');
-    background-color: v-bind('button.color.disable.background');
+    color: v-bind('button?.color.disable.text');
+    background-color: v-bind('button?.color.disable.background');
   }
 }
 </style>

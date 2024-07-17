@@ -8,7 +8,8 @@
     "paths": {
       "@lib": ["lib"]
     },
-    "types": ["vue"]
+    "types": ["vue"],
+    "strict": true
   },
   "include": [
     "vite.config.ts",

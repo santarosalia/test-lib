@@ -15,7 +15,8 @@
       "outDir": "dist",
       "declaration": true,
       "emitDeclarationOnly": true,
-      "allowSyntheticDefaultImports": true
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": ".",
     },
     "include": [
       "lib/**/*.ts", "lib/**/*.d.ts", "lib/**/*.tsx", "lib/**/*.vue"
