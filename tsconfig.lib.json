@@ -14,7 +14,7 @@
       "skipLibCheck": true,
       "outDir": "dist",
       "declaration": true,
-      "emitDeclarationOnly": true,
+      "noEmit": true,
       "baseUrl": ".",
       "paths": {
         "@lib": ["lib"],
