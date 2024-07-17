@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { WButton } from "@lib";
+import { ref } from "vue";
 
+const d = ref(0);
 </script>
 
 <template>
-  <WButton :msg="'asd'" :name-list="['a','b','c']"/>
+  <WButton :msg="'asd'" variant="fullfilled">{{ d }}</WButton>
 </template>
 
 <style scoped>

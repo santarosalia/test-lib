@@ -1,24 +1,28 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { WButtonProps } from './interface';
+import { blue } from '../Color';
 
-defineProps<{
-  msg?: string,
-  nameList?: string[]
-}>();
-
-const count = ref(0);
+defineProps<WButtonProps>();
 
 </script>
 <template>
-  <div class="card">
-    <button v-for="(name, i) in nameList" type="button" @click="count++">
-      {{ `${name} ${i}` }} {{ msg }} {{ count }}
-    </button>
-  </div>
+  <button type="button">
+    <slot></slot>
+  </button>
 </template>
 
 <style scoped>
 button {
-  color: #7e22ce;
+  background-color: v-bind('blue[700]');
+  width: 250px;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  &:hover {
+    background-color: #0341A3;
+  }
+  &:disabled {
+    background-color: #8FBFFF;
+  }
 }
 </style>

@@ -1,2 +1,8 @@
 import WButton from './Button/WButton.vue'
-export { WButton }
+import { gray, blue, green } from './Color'
+export { 
+    WButton,
+    gray,
+    blue,
+    green
+}
