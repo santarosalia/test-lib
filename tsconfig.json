@@ -19,6 +19,8 @@
     },
   },
   "include": [
+    "vite.config.ts",
+    "src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue",
     "lib/**/*.ts", "lib/**/*.d.ts", "lib/**/*.tsx", "lib/**/*.vue"
-  ],
+  ]
 }
