@@ -6,7 +6,7 @@ const d = ref(0);
 </script>
 
 <template>
-  <WButton :msg="'asd'" variant="fullfilled">{{ d }}</WButton>
+  <WButton :msg="'asd'" variant="outlined" size="lg">{{ d }}</WButton>
 </template>
 
 <style scoped>

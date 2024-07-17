@@ -78,3 +78,4 @@ export const color = {
     blue,
     green
 }
+export type Color = Gray[keyof Gray] | Blue[keyof Blue] | Green[keyof Green]
