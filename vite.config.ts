@@ -8,6 +8,10 @@ export default defineConfig({
     alias: [
       {
         find: '@lib',
+        replacement: resolve(__dirname, './lib')
+      },
+      {
+        find: '@lib/',
         replacement: resolve(__dirname, './lib/')
       },
     ]

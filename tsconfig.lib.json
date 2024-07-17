@@ -15,10 +15,10 @@
       "outDir": "dist",
       "declaration": true,
       "emitDeclarationOnly": true,
-      "allowSyntheticDefaultImports": true,
       "baseUrl": ".",
       "paths": {
-        "@lib/*": ["lib/*", "dist/*"]
+        "@lib": ["lib"],
+        "@lib/*": ["lib/*"]
       },
     },
     "include": [
