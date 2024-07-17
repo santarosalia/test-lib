@@ -22,7 +22,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.29"
+    "vue": "^3.4.29",
+    "vue-styled-components": "^1.6.0"
   },
   "devDependencies": {
     "@types/node": "^18.7.18",

@@ -1,6 +1,5 @@
-import { Color } from "lib/Color";
+import { Color } from "@lib/Color";
 import { ButtonHTMLAttributes } from "vue";
-
 export interface WButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
     msg?: string,
     variant: Variant,
@@ -9,7 +8,7 @@ export interface WButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
 
 type Variant = 'fullfilled' | 'outlined';
 type Size = 'lg' | 'md' | 'sm'
-export interface WButton {
+export interface WButtonTheme {
     variant: Variant
     color: {
         enable: {

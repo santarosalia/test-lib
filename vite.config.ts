@@ -8,8 +8,8 @@ export default defineConfig({
     alias: [
       {
         find: '@lib',
-        replacement: resolve(__dirname, './lib')
-      }
+        replacement: resolve(__dirname, './lib/')
+      },
     ]
   },
   build: {

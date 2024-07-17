@@ -6,7 +6,8 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "@lib": ["lib"]
+      "@lib": ["lib"],
+      "@lib/*": ["lib/*"]
     },
     "types": ["vue"],
     "strict": true

@@ -36,7 +36,6 @@ export const blue: Blue = {
     1000: '#306597'
 }
 
-
 type Blue = {
     100: '#F5F7F9',
     200: '#F5FAFF',

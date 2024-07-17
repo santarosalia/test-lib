@@ -17,6 +17,9 @@
       "emitDeclarationOnly": true,
       "allowSyntheticDefaultImports": true,
       "baseUrl": ".",
+      "paths": {
+        "@lib/*": ["lib/*", "dist/*"]
+      },
     },
     "include": [
       "lib/**/*.ts", "lib/**/*.d.ts", "lib/**/*.tsx", "lib/**/*.vue"
