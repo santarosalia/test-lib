@@ -5,10 +5,10 @@ import dts from 'vite-plugin-dts';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(),dts({
-    insertTypesEntry: true,
-    tsconfigPath: 'tsconfig.lib.json'
-  }),],
+  plugins: [
+    vue(),
+    dts({insertTypesEntry: true})
+  ],
   resolve: {
     alias: [
       {

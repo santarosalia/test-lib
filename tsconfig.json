@@ -1,21 +1,24 @@
 {
   "compilerOptions": {
-    "composite": true,
+    "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
     "baseUrl": ".",
+    "types": ["vue"],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
     "paths": {
       "@lib": ["lib"],
       "@lib/*": ["lib/*"]
     },
-    "types": ["vue"],
-    "strict": true,
-    "noEmit": true
   },
   "include": [
-    "vite.config.ts",
-    "src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue",
     "lib/**/*.ts", "lib/**/*.d.ts", "lib/**/*.tsx", "lib/**/*.vue"
-  ]
+  ],
 }
