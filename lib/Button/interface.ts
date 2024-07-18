@@ -1,4 +1,4 @@
-import { Color } from "@lib/Color";
+import { Color } from "@lib/Color/interface";
 import { ButtonHTMLAttributes } from "vue";
 export interface WButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
     msg?: string,
@@ -6,25 +6,27 @@ export interface WButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
     size: Size
 }
 
-type Variant = 'fullfilled' | 'outlined';
+type Variant = 'fullfilled' | 'outlined' | 'gray';
 type Size = 'lg' | 'md' | 'sm'
 export interface WButtonTheme {
     variant: Variant
-    color: {
-        enable: {
-            text: Color,
-            background: Color,
-            border?: Color
-        }
-        hover: {
-            text: Color,
-            background: Color,
-            border?: Color
-        },
-        disable: {
-            text: Color,
-            background: Color,
-            border?: Color
-        }
+    color: Color,
+    backgroundColor: Color,
+    border?: Color | string
+    hover: {
+        color: Color,
+        backgroundColor: Color,
+        border?: Color | string
     },
+    disable: {
+        color: Color,
+        backgroundColor: Color,
+        border?: Color | string
+    }
+}
+export interface WButtonSize {
+    size: Size,
+    height: string,
+    padding: string,
+    borderRadius: string
 }

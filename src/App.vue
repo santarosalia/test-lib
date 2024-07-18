@@ -1,25 +1,55 @@
 <script setup lang="ts">
 import { WButton } from "@lib";
-import { ref } from "vue";
-
-const d = ref(0);
+import { WICon } from "@lib"; 
+import { blue } from "@lib";
 </script>
 
 <template>
-  <WButton :msg="'asd'" variant="outlined" size="lg">{{ d }}</WButton>
+  <div class="container">
+    <div class="group">
+      lg
+      <WButton variant="fullfilled" size="lg">Button</WButton>
+      <WButton variant="fullfilled" size="lg" disabled >f lg dsButton</WButton>
+      <WButton variant="outlined" size="lg" >Button</WButton>
+      <WButton variant="outlined" size="lg" disabled >Button</WButton>
+      <WButton variant="gray" size="lg" >Button</WButton>
+      <WButton variant="gray" size="lg" disabled >Button</WButton>
+    </div>
+    <div class="group">
+      md
+      <WButton variant="fullfilled" size="md">Button</WButton>
+      <WButton variant="fullfilled" size="md" disabled >Button</WButton>
+      <WButton variant="outlined" size="md" >Button</WButton>
+      <WButton variant="outlined" size="md" disabled >Button</WButton>
+      <WButton variant="gray" size="md" >Button</WButton>
+      <WButton variant="gray" size="md" disabled >Button</WButton>
+    </div>
+    <div class="group">
+      sm
+      <WButton variant="fullfilled" size="sm">Button</WButton>
+      <WButton variant="fullfilled" size="sm" disabled >Button</WButton>
+      <WButton variant="outlined" size="sm" >Button</WButton>
+      <WButton variant="outlined" size="sm" disabled >Button</WButton>
+      <WButton variant="gray" size="sm" >Button</WButton>
+      <WButton variant="gray" size="sm" disabled >Button</WButton>
+    </div>
+    <div>
+      <WICon icon="arrowBottom" :color="blue[500]"/>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.container {
+  display: flex;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.group {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 20px;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+button {
+  margin: 5px;
 }
 </style>

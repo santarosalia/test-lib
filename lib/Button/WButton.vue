@@ -1,36 +1,39 @@
 <script setup lang="ts">
 import { WButtonProps } from '@lib/Button/interface';
-import { computed, ref } from 'vue';
-import { WButtonThemeList } from "./config";
+import { computed } from 'vue';
+import { WButtonSizeList, WButtonThemeList } from "./config";
 
 const props = defineProps<WButtonProps>();
 
 const buttonTheme = computed(() => WButtonThemeList.find(btn => btn.variant === props.variant)!);
-
+const buttonSize = computed(() => WButtonSizeList.find(btn => btn.size === props.size)!);
 </script>
 <template>
   <button type="button">
-    {{ buttonTheme.variant }}
     <slot></slot>
   </button>
 </template>
 
 <style scoped>
 button {
-  color: v-bind('buttonTheme.color.enable.text');
-  background-color: v-bind('buttonTheme.color.enable.background');
-  width: 250px;
-  height: 50px;
-  border-radius: 6px;
-  border: none;
-
+  color: v-bind('buttonTheme.color');
+  background-color: v-bind('buttonTheme.backgroundColor');
+  width: auto;
+  height: v-bind('buttonSize.height');
+  border-radius: v-bind('buttonSize.borderRadius');
+  border: v-bind('buttonTheme.border ?? "none"');
+  cursor: pointer;
+  padding: 4px 12px;
   &:hover {
-    color: v-bind('buttonTheme.color.hover.text');
-    background-color: v-bind('buttonTheme.color.hover.background');
+    color: v-bind('buttonTheme.hover.color');
+    background-color: v-bind('buttonTheme.hover.backgroundColor');
+    border: v-bind('buttonTheme.hover.border ?? "none"');
   }
   &:disabled {
-    color: v-bind('buttonTheme.color.disable.text');
-    background-color: v-bind('buttonTheme.color.disable.background');
+    color: v-bind('buttonTheme.disable.color');
+    background-color: v-bind('buttonTheme.disable.backgroundColor');
+    border: v-bind('buttonTheme.disable.border ?? "none"');
+    cursor: not-allowed;
   }
 }
 </style>

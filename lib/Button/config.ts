@@ -1,47 +1,69 @@
-import { blue, gray } from "@lib/Color"
-import { WButtonTheme } from "./interface"
+import { blue, gray } from "@lib/Color/config"
+import { WButtonSize, WButtonTheme } from "./interface"
 
 export const WButtonThemeList: WButtonTheme[] = [
     {
         variant: 'fullfilled',
-        color: {
-            enable: {
-                text: gray['white'],
-                background: blue[700]
-            },
-            hover: {
-                text: gray['white'],
-                background: blue[800]
-            },
-            disable: {
-                text: gray['white'],
-                background: blue[500]
-            }
+        color: gray['white'],
+        backgroundColor: blue[700],
+        hover: {
+            color: gray['white'],
+            backgroundColor: blue[800]
+        },
+        disable: {
+            color: gray['white'],
+            backgroundColor: blue[500]
         }
     },
     {
         variant: 'outlined',
-        color: {
-            enable: {
-                text: blue[700],
-                background: gray['white']
-            },
+            color: blue[700],
+            backgroundColor: gray['white'],
+            border: `${blue[700]} 1px solid`,
             hover: {
-                text: gray['white'],
-                background: blue[700]
+                color: gray['white'],
+                backgroundColor: blue[700],
+                border: `${blue[700]} 1px solid`
             },
             disable: {
-                text: gray['white'],
-                background: blue[500]
+                color: blue[500],
+                backgroundColor: gray['white'],
+                border: `${blue[500]} 1px solid`
             }
-        }
+    },
+    {
+        variant: 'gray',
+            color: gray[900],
+            backgroundColor: gray['white'],
+            border: `${gray[400]} 1px solid`,
+            hover: {
+                color: gray[900],
+                backgroundColor: gray[400],
+            },
+            disable: {
+                color: gray[400],
+                backgroundColor: gray['white'],
+                border: `${gray[400]} 1px solid`
+            }
     }
 ]
 
-export const WButtonSizeList = [
+export const WButtonSizeList: WButtonSize[] = [
     {
         size: 'lg',
-        width: '250px',
-        height: '50px'
+        height: '50px',
+        padding: '8px 12px',
+        borderRadius: '6px'
+    },
+    {
+        size: 'md',
+        height: '36px',
+        padding: '8px 12px',
+        borderRadius: '4px'
+    },{
+        size: 'sm',
+        height: '28px',
+        padding: '4px 12px',
+        borderRadius: '4px'
     }
 ]
