@@ -35,6 +35,17 @@ import { blue } from "@lib";
     </div>
     <div>
       <WICon icon="arrowBottom" :color="blue[500]"/>
+      <WButton variant="fullfilled" size="md">
+        <WICon icon="arrowBottom" :color="blue[500]"/>
+        asd
+      </WButton>
+      <WButton variant="fullfilled" size="md">
+        asdasdasd
+      </WButton>
+      <WButton variant="fullfilled" size="md">
+        <WICon icon="arrowBottom" :color="blue[100]"/>
+        asdasdasd
+      </WButton>
     </div>
   </div>
 </template>

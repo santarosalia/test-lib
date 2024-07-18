@@ -16,6 +16,10 @@ const buttonSize = computed(() => WButtonSizeList.find(btn => btn.size === props
 
 <style scoped>
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   color: v-bind('buttonTheme.color');
   background-color: v-bind('buttonTheme.backgroundColor');
   width: auto;
@@ -23,7 +27,7 @@ button {
   border-radius: v-bind('buttonSize.borderRadius');
   border: v-bind('buttonTheme.border ?? "none"');
   cursor: pointer;
-  padding: 4px 12px;
+  padding: v-bind('buttonSize.padding');
   &:hover {
     color: v-bind('buttonTheme.hover.color');
     background-color: v-bind('buttonTheme.hover.backgroundColor');
