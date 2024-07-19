@@ -23,6 +23,7 @@ button {
   color: v-bind('buttonTheme.color');
   background-color: v-bind('buttonTheme.backgroundColor');
   width: auto;
+  min-width: v-bind('buttonSize.minWidth');
   height: v-bind('buttonSize.height');
   border-radius: v-bind('buttonSize.borderRadius');
   border: v-bind('buttonTheme.border ?? "none"');

@@ -1,7 +1,6 @@
 import { Color } from "@lib/Color/interface";
 import { ButtonHTMLAttributes } from "vue";
 export interface WButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
-    msg?: string,
     variant: Variant,
     size: Size
 }
@@ -28,5 +27,6 @@ export interface WButtonSize {
     size: Size,
     height: string,
     padding: string,
-    borderRadius: string
+    borderRadius: string,
+    minWidth: string
 }

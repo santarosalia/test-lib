@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { WButton } from "@lib";
-import { WICon } from "@lib"; 
+import { WButton, WICon, WBadge } from "@lib";
 import { blue } from "@lib";
 </script>
 
@@ -48,6 +47,10 @@ import { blue } from "@lib";
       </WButton>
     </div>
   </div>
+  <div class="bgroup">
+    <WBadge></WBadge>
+  </div>
+
 </template>
 
 <style scoped>
@@ -59,6 +62,9 @@ import { blue } from "@lib";
   flex-direction: column;
   width: 250px;
   margin: 20px;
+}
+.bgroup {
+  width: 18px;
 }
 button {
   margin: 5px;
