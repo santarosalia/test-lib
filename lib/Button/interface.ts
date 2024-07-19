@@ -5,7 +5,7 @@ export interface WButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
     size: Size
 }
 
-type Variant = 'fullfilled' | 'outlined' | 'gray';
+type Variant = 'fulfilled' | 'outlined' | 'gray';
 type Size = 'lg' | 'md' | 'sm'
 export interface WButtonTheme {
     variant: Variant

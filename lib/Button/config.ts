@@ -3,7 +3,7 @@ import { WButtonSize, WButtonTheme } from "./interface"
 
 export const WButtonThemeList: WButtonTheme[] = [
     {
-        variant: 'fullfilled',
+        variant: 'fulfilled',
         color: gray['white'],
         backgroundColor: blue[700],
         hover: {
