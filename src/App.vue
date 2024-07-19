@@ -7,17 +7,18 @@ import { blue } from "@lib";
   <div class="container">
     <div class="group">
       lg
-      <WButton variant="fulfilled" size="lg">Button</WButton>
-      <WButton variant="fulfilled" size="lg" disabled >f lg dsButton</WButton>
+      <WButton variant="filled" size="lg">Button</WButton>
+      <WButton variant="filled" size="lg" disabled >f lg dsButton</WButton>
       <WButton variant="outlined" size="lg" >Button</WButton>
       <WButton variant="outlined" size="lg" disabled >Button</WButton>
+      <WButton variant="gray" size="lg" >Button</WButton>
       <WButton variant="gray" size="lg" >Button</WButton>
       <WButton variant="gray" size="lg" disabled >Button</WButton>
     </div>
     <div class="group">
       md
-      <WButton variant="fulfilled" size="md">Button</WButton>
-      <WButton variant="fulfilled" size="md" disabled >Button</WButton>
+      <WButton variant="filled" size="md">Button</WButton>
+      <WButton variant="filled" size="md" disabled >Button</WButton>
       <WButton variant="outlined" size="md" >Button</WButton>
       <WButton variant="outlined" size="md" disabled >Button</WButton>
       <WButton variant="gray" size="md" >Button</WButton>
@@ -25,8 +26,8 @@ import { blue } from "@lib";
     </div>
     <div class="group">
       sm
-      <WButton variant="fulfilled" size="sm">Button</WButton>
-      <WButton variant="fulfilled" size="sm" disabled >Button</WButton>
+      <WButton variant="filled" size="sm">Button</WButton>
+      <WButton variant="filled" size="sm" disabled >Button</WButton>
       <WButton variant="outlined" size="sm" >Button</WButton>
       <WButton variant="outlined" size="sm" disabled >Button</WButton>
       <WButton variant="gray" size="sm" >Button</WButton>
@@ -34,14 +35,14 @@ import { blue } from "@lib";
     </div>
     <div>
       <WICon icon="arrowBottom" :color="blue[500]"/>
-      <WButton variant="fulfilled" size="md">
+      <WButton variant="filled" size="md">
         <WICon icon="arrowBottom" :color="blue[500]"/>
         asd
       </WButton>
-      <WButton variant="fulfilled" size="md">
+      <WButton variant="filled" size="md">
         asdasdasd
       </WButton>
-      <WButton variant="fulfilled" size="md">
+      <WButton variant="filled" size="md">
         <WICon icon="arrowBottom" :color="blue[100]"/>
         asdasdasd
       </WButton>
