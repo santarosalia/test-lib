@@ -1,14 +1,9 @@
 <script setup lang="ts">
 import { WButton, WIcon, WBadge, WToggle } from "@lib";
 import { blue } from "@lib";
-import { ThemeProvider } from 'vue3-styled-components'
-const theme = {
- 
-}
 </script>
 
 <template>
-  <ThemeProvider :theme="theme">
   <div class="container">
     <div class="group">
       lg
@@ -56,7 +51,6 @@ const theme = {
     <WBadge>g</WBadge>
     <WToggle></WToggle>
   </div>
-</ThemeProvider>
 </template>
 
 <style scoped>

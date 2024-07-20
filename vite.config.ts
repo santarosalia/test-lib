@@ -2,12 +2,11 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 import dts from 'vite-plugin-dts';
-import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),vueJsx(),
+    vue(),
     dts({insertTypesEntry: true, tsconfigPath: 'tsconfig.build.json'})
   ],
   resolve: {
@@ -21,10 +20,6 @@ export default defineConfig({
         replacement: resolve(__dirname, './lib/')
       },
     ]
-  },
-  esbuild: {
-    jsxFactory: 'h',
-    jsxFragment: 'Fragment'
   },
   build: {
     lib: {
