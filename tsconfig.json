@@ -5,6 +5,7 @@
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
     "jsx": "preserve",
+    "jsxImportSource": "vue",
     "baseUrl": ".",
     "types": ["vue"],
     "strict": true,
@@ -20,7 +21,7 @@
   },
   "include": [
     "vite.config.ts",
-    "src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue",
-    "lib/**/*.ts", "lib/**/*.d.ts", "lib/**/*.tsx", "lib/**/*.vue"
+    "src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.tsx",
+    "lib/**/*.ts", "lib/**/*.d.ts", "lib/**/*.tsx", "lib/**/*.vue", "lib/**/*.tsx"
   ]
 }

@@ -53,7 +53,7 @@ const theme = {
     </div>
   </div>
   <div class="bgroup">
-    <WBadge></WBadge>
+    <!-- <WBadge>Tddfff</WBadge> -->
   </div>
 </ThemeProvider>
 </template>
@@ -69,7 +69,7 @@ const theme = {
   margin: 20px;
 }
 .bgroup {
-  width: 18px;
+
 }
 button {
   margin: 5px;
