@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { WButton, WICon, WBadge } from "@lib";
+import { WButton, WIcon, WBadge, WToggle } from "@lib";
 import { blue } from "@lib";
 import { ThemeProvider } from 'vue3-styled-components'
 const theme = {
@@ -38,22 +38,23 @@ const theme = {
       <WButton variant="gray" size="sm" disabled >Button</WButton>
     </div>
     <div>
-      <WICon icon="arrowBottom" :color="blue[500]"/>
+      <WIcon icon="arrowBottom" :color="blue[500]"/>
       <WButton variant="filled" size="md">
-        <WICon icon="arrowBottom" :color="blue[500]"/>
+        <WIcon icon="arrowBottom" :color="blue[500]"/>
         asd
       </WButton>
       <WButton variant="filled" size="md">
         asdasdasd
       </WButton>
       <WButton variant="filled" size="md">
-        <WICon icon="arrowBottom" :color="blue[100]"/>
+        <WIcon icon="arrowBottom" :color="blue[100]"/>
         asdasdasd
       </WButton>
     </div>
   </div>
   <div class="bgroup">
-    <!-- <WBadge>Tddfff</WBadge> -->
+    <WBadge>g</WBadge>
+    <WToggle></WToggle>
   </div>
 </ThemeProvider>
 </template>
