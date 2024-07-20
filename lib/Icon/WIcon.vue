@@ -8,11 +8,11 @@ const d = icon[props.icon];
 const color = props.color;
 const width = props.width ?? '24px';
 const height = props.height ?? '24px';
-const svgCss = css({
+const svgClassName = css({
     width: width,
     height: height
 });
-const pathCss = css({
+const pathClassName = css({
     fill: color,
 });
 </script>
@@ -20,9 +20,8 @@ const pathCss = css({
     <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        :class="svgCss"
-        
+        :class="svgClassName"
     >
-        <path :d="d" :class="pathCss"/>
+        <path :d="d" :class="pathClassName"/>
     </svg>
 </template>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import { css } from '@emotion/css';
-    const WBadge = css({
+    const className = css({
         display: 'inline-flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -16,7 +16,7 @@
        
 </script>
 <template>
-    <span :class="WBadge">
+    <span :class="className">
         <slot></slot>
     </span>
 </template>

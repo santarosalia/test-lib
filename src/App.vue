@@ -43,7 +43,7 @@ import { blue } from "@lib";
       </WButton>
       <WButton variant="filled" size="md">
         <WIcon icon="arrowBottom" :color="blue[100]"/>
-        asdasdasd
+        k
       </WButton>
     </div>
   </div>

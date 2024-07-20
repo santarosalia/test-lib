@@ -49,18 +49,15 @@ export const wButtonSize: WButtonSize = {
         height: '50px',
         padding: '8px 12px',
         borderRadius: '6px',
-        minWidth: '250px'
     },
     md: {
         height: '36px',
         padding: '8px 12px',
         borderRadius: '4px',
-        minWidth: '100px'
     },
     sm: {
         height: '28px',
         padding: '4px 12px',
         borderRadius: '4px',
-        minWidth: '50px'
     }
 }

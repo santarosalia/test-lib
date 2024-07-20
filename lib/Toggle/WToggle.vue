@@ -1,15 +1,12 @@
 <script setup lang="ts">
 import { css } from '@emotion/css';
-const inputCss = css({
+
+const className = css({
     display: 'flex',
-    margin: 0,
     position: 'relative',
     cursor: 'pointer',
     width: 0,
     height: 0,
-    background: 'blue',
-    padding: '4px',
-    outline: 'none',
     '&::before': {
         content: '""',
         position: 'absolute',
@@ -41,5 +38,5 @@ const inputCss = css({
 });
 </script>
 <template>
-    <input type="checkbox" :class="inputCss"></input>
+    <input type="checkbox" :class="className"></input>
 </template>
