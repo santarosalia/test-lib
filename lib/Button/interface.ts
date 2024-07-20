@@ -7,8 +7,7 @@ export interface WButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
 
 type Variant = 'filled' | 'outlined' | 'gray';
 type Size = 'lg' | 'md' | 'sm'
-export interface WButtonTheme {
-    variant: Variant
+interface ButtonStyle {
     color: Color,
     backgroundColor: Color,
     border?: Color | string
@@ -17,16 +16,22 @@ export interface WButtonTheme {
         backgroundColor: Color,
         border?: Color | string
     },
-    disable: {
+    disabled: {
         color: Color,
         backgroundColor: Color,
         border?: Color | string
     }
 }
-export interface WButtonSize {
-    size: Size,
+export type WButtonStyle = {
+    [variant in Variant]: ButtonStyle
+}
+interface ButtonSize {
     height: string,
     padding: string,
     borderRadius: string,
     minWidth: string
+}
+
+export type WButtonSize = {
+    [size in Size]: ButtonSize
 }

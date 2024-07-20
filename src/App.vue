@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import { WButton, WICon, WBadge } from "@lib";
 import { blue } from "@lib";
+import { ThemeProvider } from 'vue3-styled-components'
+const theme = {
+ 
+}
 </script>
 
 <template>
+  <ThemeProvider :theme="theme">
   <div class="container">
     <div class="group">
       lg
@@ -11,7 +16,6 @@ import { blue } from "@lib";
       <WButton variant="filled" size="lg" disabled >f lg dsButton</WButton>
       <WButton variant="outlined" size="lg" >Button</WButton>
       <WButton variant="outlined" size="lg" disabled >Button</WButton>
-      <WButton variant="gray" size="lg" >Button</WButton>
       <WButton variant="gray" size="lg" >Button</WButton>
       <WButton variant="gray" size="lg" disabled >Button</WButton>
     </div>
@@ -51,7 +55,7 @@ import { blue } from "@lib";
   <div class="bgroup">
     <WBadge></WBadge>
   </div>
-
+</ThemeProvider>
 </template>
 
 <style scoped>
