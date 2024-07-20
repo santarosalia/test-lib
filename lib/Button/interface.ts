@@ -1,5 +1,6 @@
 import { Color } from "@lib/Color/interface";
 import { ButtonHTMLAttributes } from "vue";
+import {CSSInterpolation} from '@emotion/serialize'
 export interface WButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
     variant: Variant,
     size: Size
@@ -23,7 +24,7 @@ interface ButtonStyle {
     }
 }
 export type WButtonStyle = {
-    [variant in Variant]: ButtonStyle
+    [variant in Variant]: CSSInterpolation
 }
 interface ButtonSize {
     height: string,
@@ -33,5 +34,5 @@ interface ButtonSize {
 }
 
 export type WButtonSize = {
-    [size in Size]: ButtonSize
+    [size in Size]: CSSInterpolation
 }

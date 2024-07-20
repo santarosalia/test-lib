@@ -4,11 +4,11 @@ export const wButtonStyle: WButtonStyle = {
     filled: {
         color: gray['white'],
         backgroundColor: blue[700],
-        hover: {
+        ':hover': {
             color: gray['white'],
             backgroundColor: blue[800]
         },
-        disabled: {
+        ':disabled': {
             color: gray['white'],
             backgroundColor: blue[500]
         }
@@ -17,12 +17,12 @@ export const wButtonStyle: WButtonStyle = {
         color: blue[700],
         backgroundColor: gray['white'],
         border: `${blue[700]} 1px solid`,
-        hover: {
+        ':hover': {
             color: gray['white'],
             backgroundColor: blue[700],
             border: `${blue[700]} 1px solid`
         },
-        disabled: {
+        ':disabled': {
             color: blue[500],
             backgroundColor: gray['white'],
             border: `${blue[500]} 1px solid`
@@ -32,11 +32,11 @@ export const wButtonStyle: WButtonStyle = {
         color: gray[900],
         backgroundColor: gray['white'],
         border: `${gray[400]} 1px solid`,
-        hover: {
+        ':hover': {
             color: gray[900],
             backgroundColor: gray[400],
         },
-        disabled: {
+        ':disabled': {
             color: gray[400],
             backgroundColor: gray['white'],
             border: `${gray[400]} 1px solid`
