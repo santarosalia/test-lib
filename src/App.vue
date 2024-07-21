@@ -48,7 +48,9 @@ import { blue } from "@lib";
     </div>
   </div>
   <div class="bgroup">
-    <WBadge>g</WBadge>
+    <WBadge>
+      
+    </WBadge>
     <WToggle></WToggle>
   </div>
 </template>
@@ -64,7 +66,7 @@ import { blue } from "@lib";
   margin: 20px;
 }
 .bgroup {
-
+  display: flex;
 }
 button {
   margin: 5px;
