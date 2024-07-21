@@ -5,7 +5,7 @@ import { wButtonSize, wButtonStyle } from './config';
 const props = defineProps<WButtonProps>();
 const style = wButtonStyle[props.variant];
 const size = wButtonSize[props.size];
-const className = css({
+const baseClassName = css({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -14,11 +14,12 @@ const className = css({
         cursor: 'not-allowed'
     },
     border: 'none'
-},
-style, size);
+});
+const styleClassName = css(style);
+const sizeClassName = css(size);
 </script>
 <template>
-    <button :class="className">
+    <button :class="[baseClassName, styleClassName, sizeClassName]">
         <slot></slot>
     </button>
 </template>
