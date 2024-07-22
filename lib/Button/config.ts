@@ -1,6 +1,6 @@
 import { blue, gray } from "@lib/Color/config"
-import { WButtonSize, WButtonStyle } from "./interface"
-export const wButtonStyle: WButtonStyle = {
+import { ButtonSize, ButtonVariant } from "./interface"
+export const buttonVariant: ButtonVariant = {
     filled: {
         color: gray['white'],
         backgroundColor: blue[700],
@@ -45,11 +45,12 @@ export const wButtonStyle: WButtonStyle = {
     }
 }
 
-export const wButtonSize: WButtonSize = {
+export const buttonSize: ButtonSize = {
     lg: {
         height: '50px',
         padding: '8px 12px',
-        borderRadius: '6px',
+        borderRadius: '4px',
+        width: '250px'
     },
     md: {
         height: '36px',

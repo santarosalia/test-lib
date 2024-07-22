@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes } from "vue";
 import {CSSInterpolation} from '@emotion/serialize'
-export interface WButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
+export interface ButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
     variant: Variant,
     size: Size
 }
@@ -18,9 +18,9 @@ enum Sizes {
 type Variant = keyof typeof Variants;
 type Size = keyof typeof Sizes;
 
-export type WButtonStyle = {
+export type ButtonVariant = {
     [variant in Variant]: CSSInterpolation
 }
-export type WButtonSize = {
+export type ButtonSize = {
     [size in Size]: CSSInterpolation
 }

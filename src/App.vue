@@ -1,6 +1,15 @@
 <script setup lang="ts">
-import { WButton, WIcon, WBadge, WToggle, WTypography } from "@lib";
+import { WButton, WIcon, WBadge, WToggle, WTypography, WPaper, WInput } from "@lib";
 import { blue } from "@lib";
+import { typography } from "@lib/Typography/config";
+import { ref } from "vue";
+const typographyKeyList = Object.keys(typography);
+const isError = ref(false);
+const msg = ref('');
+const click = () => {
+  isError.value = !isError.value;
+  msg.value =  msg.value === 'abc'? 'ffff' : 'abc'
+}
 </script>
 
 <template>
@@ -54,10 +63,18 @@ import { blue } from "@lib";
     <WToggle></WToggle>
   </div>
   <div class="typo">
-    Typo
-    <WTypography level="display1">Display1</WTypography>
-    <WTypography level="display2">Display2</WTypography>
+    Typography
+    <WTypography v-for="key in typographyKeyList" :level="key">{{key}}</WTypography>
   </div>
+  <WPaper>
+    <template #header>header</template>
+    <template #default>body</template>
+  </WPaper>
+  <WPaper>
+    <template #default>body</template>
+  </WPaper>
+  <WButton size="sm" variant="filled" @click="click">d</WButton>
+  <WInput value="agf" error :msg="'agag'" maxlength="10" showmaxlength></WInput>
 </template>
 
 <style scoped>

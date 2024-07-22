@@ -1,6 +1,6 @@
 import { Color } from "@lib/Color/interface";
 import { icon } from "./config";
-export interface WIconProps {
+export interface IconProps {
     icon: Icon,
     color: Color,
     width?: string,

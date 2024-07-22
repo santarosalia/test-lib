@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import {css} from '@emotion/css'
-import { WButtonProps } from './interface';
-import { wButtonSize, wButtonStyle } from './config';
-const props = defineProps<WButtonProps>();
-const style = wButtonStyle[props.variant];
-const size = wButtonSize[props.size];
+import { ButtonProps } from './interface';
+import { buttonSize, buttonVariant } from './config';
+const props = defineProps<ButtonProps>();
+const variant = buttonVariant[props.variant];
+const size = buttonSize[props.size];
 const baseClassName = css({
     display: 'flex',
     justifyContent: 'center',
@@ -15,11 +15,11 @@ const baseClassName = css({
     },
     textWrap:'nowrap'
 });
-const styleClassName = css(style);
+const variantClassName = css(variant);
 const sizeClassName = css(size);
 </script>
 <template>
-    <button :class="[baseClassName, styleClassName, sizeClassName]">
+    <button :class="[baseClassName, variantClassName, sizeClassName]">
         <slot></slot>
     </button>
 </template>

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { css } from '@emotion/css';
 import { icon } from './config'
-import { WIconProps } from './interface';
-const props = defineProps<WIconProps>();
+import { IconProps } from './interface';
+const props = defineProps<IconProps>();
 
 const d = icon[props.icon];
 const color = props.color;

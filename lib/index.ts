@@ -1,17 +1,21 @@
-import WIcon from '@lib/Icon/WIcon.vue'
-import WBadge from './Badge/WBadge.vue'
-import WToggle from '@lib/Toggle/WToggle.vue'
-import WButton from './Button/WButton.vue'
-import WTypography from './Typography/WTypography.vue'
+import Icon from '@lib/Icon/Icon.vue'
+import Badge from './Badge/Badge.vue'
+import Toggle from '@lib/Toggle/Toggle.vue'
+import Button from './Button/Button.vue'
+import Input from './Input/Input.vue'
+import Typography from './Typography/Typography.vue'
+import Paper from './Paper/Paper.vue'
 import { gray, blue, green, red, yellow } from '@lib/Color/config'
 import global from './global'
 global;
 export { 
-    WButton,
-    WBadge,
-    WIcon,
-    WToggle,
-    WTypography,
+    Button as WButton,
+    Badge as WBadge,
+    Icon as WIcon,
+    Toggle as WToggle,
+    Typography as WTypography,
+    Paper as WPaper,
+    Input as WInput,
     gray,
     blue,
     green,
