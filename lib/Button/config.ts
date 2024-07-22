@@ -1,17 +1,16 @@
-import { blue, color, gray } from "@lib/Color/config"
+import { color } from "@lib/Color/config"
 import { ButtonSize, ButtonVariant } from "./interface"
-import { Blue, Gray } from "@lib/Color/interface"
 export const buttonVariant: ButtonVariant = {
     filled: {
         color: color.white,
         backgroundColor: color.blue700,
         border: 'none',
         ':hover': {
-            color: gray['white'],
+            color: color.white,
             backgroundColor: color.blue800
         },
         ':disabled': {
-            color: gray['white'],
+            color: color.white,
             backgroundColor: color.blue500
         }
     },
@@ -20,19 +19,19 @@ export const buttonVariant: ButtonVariant = {
         backgroundColor: color.white,
         border: `${color.blue700} 1px solid`,
         ':hover': {
-            color: gray['white'],
+            color: color.white,
             backgroundColor: color.blue700,
             border: `${color.blue700} 1px solid`
         },
         ':disabled': {
             color: color.blue500,
-            backgroundColor: gray['white'],
+            backgroundColor: color.white,
             border: `${color.blue500} 1px solid`
         }
     },
     gray: {
         color: color.gray900,
-        backgroundColor: gray['white'],
+        backgroundColor: color.white,
         border: `${color.gray400} 1px solid`,
         ':hover': {
             color: color.gray900,

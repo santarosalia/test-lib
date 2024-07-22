@@ -5,7 +5,7 @@ import Button from './Button/Button.vue'
 import Input from './Input/Input.vue'
 import Typography from './Typography/Typography.vue'
 import Paper from './Paper/Paper.vue'
-import { gray, blue, green, red, yellow } from '@lib/Color/config'
+import { color } from '@lib/Color/config'
 import global from './global'
 global;
 export { 
@@ -16,9 +16,5 @@ export {
     Typography as WTypography,
     Paper as WPaper,
     Input as WInput,
-    gray,
-    blue,
-    green,
-    red,
-    yellow
+    color as WColor
 }

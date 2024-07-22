@@ -1,6 +1,6 @@
 import { Blue, BlueColor, Color, Gray, GrayColor, Green, GreenColor, Red, RedColor, Yellow, YellowColor } from "./interface"
 
-export const gray: GrayColor = {
+const gray: GrayColor = {
     [Gray.white]: '#FFFFFF',
     [Gray.gray100]: '#FCFCFC',
     [Gray.gray200]: '#F5F5F5',
@@ -20,7 +20,7 @@ export const gray: GrayColor = {
 /**
 * ![blue 50](https://mui.com/static/colors-preview/blue-50-24x24.png) d
 */
-export const blue: BlueColor = {
+const blue: BlueColor = {
     [Blue.blue100]: '#F5F7F9',
     [Blue.blue200]: '#F5FAFF',
     [Blue.blue300]: '#EBF4FF',
@@ -33,7 +33,7 @@ export const blue: BlueColor = {
     [Blue.blue1000]: '#306597'
 }
 
-export const green: GreenColor = {
+const green: GreenColor = {
     [Green.green100]: '#F5FFF8',
     [Green.green200]: '#E5FFED',
     [Green.green300]: '#CCFFDB',
@@ -44,7 +44,7 @@ export const green: GreenColor = {
     [Green.green800]: '#31B95A'
 }
 
-export const red: RedColor = {
+const red: RedColor = {
     [Red.red100]: '#FFF5F5',
     [Red.red200]: '#FFE5E5',
     [Red.red300]: '#FFCCCC',
@@ -55,7 +55,7 @@ export const red: RedColor = {
     [Red.red800]: '#BF2B2B'
 }
 
-export const yellow: YellowColor = {
+const yellow: YellowColor = {
     [Yellow.yellow100]: '#FFFBEB',
     [Yellow.yellow200]: '#FFF6D1',
     [Yellow.yellow300]: '#FFF1B8',

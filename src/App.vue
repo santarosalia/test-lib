@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { WButton, WIcon, WBadge, WToggle, WTypography, WPaper, WInput } from "@lib";
-import { blue } from "@lib";
 import { typography } from "@lib/Typography/config";
 import { reactive, ref } from "vue";
 const typographyKeyList = Object.keys(typography);
@@ -12,9 +11,7 @@ const click = () => {
   // msg.value =  msg.value === 'abc'? 'ffff' : 'abc'
   console.log(o)
 }
-const ic =(e) => {
-  console.log(e.target.value)
-}
+
 </script>
 
 <template>
@@ -47,16 +44,16 @@ const ic =(e) => {
       <WButton variant="gray" size="sm" disabled >Button</WButton>
     </div>
     <div>
-      <WIcon icon="arrowBottom" :color="blue[500]"/>
+      <WIcon icon="arrowBottom" color="blue300"/>
       <WButton variant="filled" size="md">
-        <WIcon icon="arrowBottom" :color="blue[500]"/>
+        <WIcon icon="arrowBottom" color="yellow100"/>
         asd
       </WButton>
       <WButton variant="filled" size="md">
         asdasdasd
       </WButton>
       <WButton variant="filled" size="md">
-        <WIcon icon="arrowBottom" :color="blue[100]"/>
+        <WIcon icon="arrowBottom" color="green500"/>
         k
       </WButton>
     </div>
@@ -79,7 +76,7 @@ const ic =(e) => {
     <template #default>body</template>
   </WPaper>
   <WButton size="sm" variant="filled" @click="click">
-    <WIcon icon="download" color="#F8D95D" ></WIcon>
+    <WIcon icon="download" color="red500" ></WIcon>
   </WButton>
   <WInput error :msg="'aga'" maxlength="20" showCount v-model="o"></WInput>
 </template>

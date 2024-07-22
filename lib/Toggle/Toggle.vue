@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { css } from '@emotion/css';
-import { blue, color, gray } from '@lib/Color/config';
+import { color } from '@lib/Color/config';
 
 const className = css({
     appearance: 'none',
@@ -17,7 +17,7 @@ const className = css({
         top: '3px',
         left: '3px',
         borderRadius: '35px',
-        background: gray['white'],
+        background: color.white,
         // transition: '.5s'
     },
     '&:checked': {

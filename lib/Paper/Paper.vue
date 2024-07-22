@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { css } from '@emotion/css';
-import { blue, color, gray } from '@lib/Color/config';
+import { color } from '@lib/Color/config';
 import { typography } from '@lib/Typography/config';
 import { PaperProps } from './interface';
 
