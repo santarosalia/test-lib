@@ -4,11 +4,8 @@ import { blue, gray } from '@lib/Color/config';
 import { InputProps } from './interface';
 import { computed, InputHTMLAttributes, reactive, ref, useAttrs, useSlots } from 'vue';
 import { typography } from '@lib/Typography/config';
-const props = defineProps<InputProps>();
-const attrs = useAttrs();
 
-const inputValue = ref(attrs.value as string ?? '');
-const existsMaxlength = attrs.hasOwnProperty('maxlength');
+const props = defineProps<InputProps>();
 const containerClassName = css({
     display: 'flex',
     flexDirection: 'column',
@@ -41,19 +38,15 @@ const msgClassName = computed(() => {
         color: props.error? 'red' : gray[800]
     }, typography['body6']);
 });
-// const length = computed(() => attrs.value.length);
-const onInput = (e: Event) => {
-    const target = e.target as HTMLInputElement;
-    inputValue.value= target.value;
-};
+const model = defineModel<string>();
 </script>
 <template>
     <div :class="containerClassName">
-        <input :class="baseClassName" v-bind="attrs" @input="onInput" :value="inputValue">
+        <input :class="baseClassName" v-bind="$attrs" v-model="model">
         <span :class="msgClassName">
             <span>{{ props.msg }}</span>
-            <span>
-                {{ inputValue.length }} / {{ attrs.maxlength}}
+            <span v-if="showCount">
+                {{ model ? model.length : 0 }} / {{ $attrs.maxlength}}
             </span>
         </span>
     </div>

@@ -2,13 +2,18 @@
 import { WButton, WIcon, WBadge, WToggle, WTypography, WPaper, WInput } from "@lib";
 import { blue } from "@lib";
 import { typography } from "@lib/Typography/config";
-import { ref } from "vue";
+import { reactive, ref } from "vue";
 const typographyKeyList = Object.keys(typography);
 const isError = ref(false);
 const msg = ref('');
+const o = ref('abcdef');
 const click = () => {
-  isError.value = !isError.value;
-  msg.value =  msg.value === 'abc'? 'ffff' : 'abc'
+  // isError.value = !isError.value;
+  // msg.value =  msg.value === 'abc'? 'ffff' : 'abc'
+  console.log(o)
+}
+const ic =(e) => {
+  console.log(e.target.value)
 }
 </script>
 
@@ -74,7 +79,7 @@ const click = () => {
     <template #default>body</template>
   </WPaper>
   <WButton size="sm" variant="filled" @click="click">d</WButton>
-  <WInput value="agf" error :msg="'agag'" maxlength="10" showmaxlength></WInput>
+  <WInput error :msg="'aga'" maxlength="10" showCount v-model="o"></WInput>
 </template>
 
 <style scoped>
