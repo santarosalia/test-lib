@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { css } from '@emotion/css';
-import { blue, gray } from '@lib/Color/config';
+import { color } from '@lib/Color/config';
 import { InputProps } from './interface';
-import { computed, InputHTMLAttributes, reactive, ref, useAttrs, useSlots } from 'vue';
+import { computed } from 'vue';
 import { typography } from '@lib/Typography/config';
 
 const props = defineProps<InputProps>();
@@ -14,18 +14,18 @@ const containerClassName = css({
 
 const baseClassName = computed(()=> {
     return css({
-        color: gray[1100],
+        color: color.gray1100,
         height: '20px',
         padding: '8px 10px',
-        border: `1px solid ${props.error ? 'red' : gray[400]}`,
+        border: `1px solid ${props.error ? color.red600 : color.gray400}`,
         borderRadius: '4px',
         ':focus': {
-            borderColor: blue[600],
+            borderColor: color.blue600,
             outline: 'none'
         },
         ':disabled': {
-            color: gray[700],
-            backgroundColor: gray[300]
+            color: color.gray700,
+            backgroundColor: color.gray300
         },
     });
 });
@@ -35,7 +35,7 @@ const msgClassName = computed(() => {
         display: 'flex',
         justifyContent: 'space-between',
         padding: '0px 4px',
-        color: props.error? 'red' : gray[800]
+        color: props.error? 'red' : color.gray800
     }, typography['body6']);
 });
 const model = defineModel<string>();
@@ -46,7 +46,7 @@ const model = defineModel<string>();
         <span :class="msgClassName">
             <span>{{ props.msg }}</span>
             <span v-if="showCount">
-                {{ model ? model.length : 0 }} / {{ $attrs.maxlength}}
+                {{ model ? model.length : 0 }}{{ $attrs.maxlength ? ` / ${$attrs.maxlength}` : ''}}
             </span>
         </span>
     </div>

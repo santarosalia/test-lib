@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { css } from '@emotion/css';
-import { blue, gray } from '@lib/Color/config';
+import { blue, color, gray } from '@lib/Color/config';
 import { typography } from '@lib/Typography/config';
 import { PaperProps } from './interface';
 
@@ -9,14 +9,14 @@ const containerClassName = css({
     display: 'flex',
     borderRadius: '10px',
     flexDirection: 'column',
-    border: `1px solid ${gray[400]}`,
+    border: `1px solid ${color.gray400}`,
     width: props.width,
     height: props.height
 });
 
 const headerClassName = css({
     padding: '8px 16px',
-    backgroundColor: blue[200],
+    backgroundColor: color.blue200,
     borderRadius: '10px 10px 0 0'
 }, typography['subheader4']);
 

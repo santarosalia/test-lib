@@ -78,8 +78,10 @@ const ic =(e) => {
   <WPaper>
     <template #default>body</template>
   </WPaper>
-  <WButton size="sm" variant="filled" @click="click">d</WButton>
-  <WInput error :msg="'aga'" maxlength="10" showCount v-model="o"></WInput>
+  <WButton size="sm" variant="filled" @click="click">
+    <WIcon icon="download" color="#F8D95D" ></WIcon>
+  </WButton>
+  <WInput error :msg="'aga'" maxlength="20" showCount v-model="o"></WInput>
 </template>
 
 <style scoped>

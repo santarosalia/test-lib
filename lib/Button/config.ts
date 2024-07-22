@@ -1,46 +1,47 @@
-import { blue, gray } from "@lib/Color/config"
+import { blue, color, gray } from "@lib/Color/config"
 import { ButtonSize, ButtonVariant } from "./interface"
+import { Blue, Gray } from "@lib/Color/interface"
 export const buttonVariant: ButtonVariant = {
     filled: {
-        color: gray['white'],
-        backgroundColor: blue[700],
+        color: color.white,
+        backgroundColor: color.blue700,
         border: 'none',
         ':hover': {
             color: gray['white'],
-            backgroundColor: blue[800]
+            backgroundColor: color.blue800
         },
         ':disabled': {
             color: gray['white'],
-            backgroundColor: blue[500]
+            backgroundColor: color.blue500
         }
     },
     outlined: {
-        color: blue[700],
-        backgroundColor: gray['white'],
-        border: `${blue[700]} 1px solid`,
+        color: color.blue700,
+        backgroundColor: color.white,
+        border: `${color.blue700} 1px solid`,
         ':hover': {
             color: gray['white'],
-            backgroundColor: blue[700],
-            border: `${blue[700]} 1px solid`
+            backgroundColor: color.blue700,
+            border: `${color.blue700} 1px solid`
         },
         ':disabled': {
-            color: blue[500],
+            color: color.blue500,
             backgroundColor: gray['white'],
-            border: `${blue[500]} 1px solid`
+            border: `${color.blue500} 1px solid`
         }
     },
     gray: {
-        color: gray[900],
+        color: color.gray900,
         backgroundColor: gray['white'],
-        border: `${gray[400]} 1px solid`,
+        border: `${color.gray400} 1px solid`,
         ':hover': {
-            color: gray[900],
-            backgroundColor: gray[400],
+            color: color.gray900,
+            backgroundColor: color.gray400,
         },
         ':disabled': {
-            color: gray[400],
-            backgroundColor: gray['white'],
-            border: `${gray[400]} 1px solid`
+            color: color.gray400,
+            backgroundColor: color.white,
+            border: `${color.gray400} 1px solid`
         }
     }
 }

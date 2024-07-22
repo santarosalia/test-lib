@@ -1,75 +1,75 @@
-import { Blue, Gray, Green, Red, Yellow } from "./interface"
+import { Blue, BlueColor, Color, Gray, GrayColor, Green, GreenColor, Red, RedColor, Yellow, YellowColor } from "./interface"
 
-export const gray: Gray = {
-    white: '#FFFFFF',
-    100: '#FCFCFC',
-    200: '#F5F5F5',
-    300: '#F0F0F0',
-    400: '#DCDCDC',
-    500: '#C8C8C8',
-    600: '#B4B4B4',
-    700: '#8C8C8C',
-    800: '#787878',
-    900: '#646464',
-    1000: '#505050',
-    1100: '#3C3C3C',
-    1200: '#282828',
-    1300: '#141414',
-    black: '#000000'
+export const gray: GrayColor = {
+    [Gray.white]: '#FFFFFF',
+    [Gray.gray100]: '#FCFCFC',
+    [Gray.gray200]: '#F5F5F5',
+    [Gray.gray300]: '#F0F0F0',
+    [Gray.gray400]: '#DCDCDC',
+    [Gray.gray500]: '#C8C8C8',
+    [Gray.gray600]: '#B4B4B4',
+    [Gray.gray700]: '#8C8C8C',
+    [Gray.gray800]: '#787878',
+    [Gray.gray900]: '#646464',
+    [Gray.gray1000]: '#505050',
+    [Gray.gray1100]: '#3C3C3C',
+    [Gray.gray1200]: '#282828',
+    [Gray.gray1300]: '#141414',
+    [Gray.black]: '#000000'
 }
 /**
 * ![blue 50](https://mui.com/static/colors-preview/blue-50-24x24.png) d
 */
-export const blue: Blue = {
-    100: '#F5F7F9',
-    200: '#F5FAFF',
-    300: '#EBF4FF',
-    400: '#DBEDFF',
-    500: '#8FBFFF',
-    600: '#388EFF',
-    700: '#0A64FA',
-    800: '#0452CF',
-    900: '#0341A3',
-    1000: '#306597'
+export const blue: BlueColor = {
+    [Blue.blue100]: '#F5F7F9',
+    [Blue.blue200]: '#F5FAFF',
+    [Blue.blue300]: '#EBF4FF',
+    [Blue.blue400]: '#DBEDFF',
+    [Blue.blue500]: '#8FBFFF',
+    [Blue.blue600]: '#388EFF',
+    [Blue.blue700]: '#0A64FA',
+    [Blue.blue800]: '#0452CF',
+    [Blue.blue900]: '#0341A3',
+    [Blue.blue1000]: '#306597'
 }
 
-export const green: Green = {
-    100: '#F5FFF8',
-    200: '#E5FFED',
-    300: '#CCFFDB',
-    400: '#B2FFC9',
-    500: '#99FFB8',
-    600: '#80FFA6',
-    700: '#5BE384',
-    800: '#31B95A'
+export const green: GreenColor = {
+    [Green.green100]: '#F5FFF8',
+    [Green.green200]: '#E5FFED',
+    [Green.green300]: '#CCFFDB',
+    [Green.green400]: '#B2FFC9',
+    [Green.green500]: '#99FFB8',
+    [Green.green600]: '#80FFA6',
+    [Green.green700]: '#5BE384',
+    [Green.green800]: '#31B95A'
 }
 
-export const red: Red = {
-    100: '#FFF5F5',
-    200: '#FFE5E5',
-    300: '#FFCCCC',
-    400: '#FFB2B2',
-    500: '#FF9999',
-    600: '#FF6B6B',
-    700: '#DD4040',
-    800: '#BF2B2B'
+export const red: RedColor = {
+    [Red.red100]: '#FFF5F5',
+    [Red.red200]: '#FFE5E5',
+    [Red.red300]: '#FFCCCC',
+    [Red.red400]: '#FFB2B2',
+    [Red.red500]: '#FF9999',
+    [Red.red600]: '#FF6B6B',
+    [Red.red700]: '#DD4040',
+    [Red.red800]: '#BF2B2B'
 }
 
-export const yellow: Yellow = {
-    100: '#FFFBEB',
-    200: '#FFF6D1',
-    300: '#FFF1B8',
-    400: '#FFEC9E',
-    500: '#FFE88A',
-    600: '#F8D95D',
-    700: '#BA9608',
-    800: '#987B06'
+export const yellow: YellowColor = {
+    [Yellow.yellow100]: '#FFFBEB',
+    [Yellow.yellow200]: '#FFF6D1',
+    [Yellow.yellow300]: '#FFF1B8',
+    [Yellow.yellow400]: '#FFEC9E',
+    [Yellow.yellow500]: '#FFE88A',
+    [Yellow.yellow600]: '#F8D95D',
+    [Yellow.yellow700]: '#BA9608',
+    [Yellow.yellow800]: '#987B06'
 }
 
 export const color = {
-    gray,
-    blue,
-    green,
-    red,
-    yellow
+    ...gray,
+    ...blue,
+    ...green,
+    ...red,
+    ...yellow
 }
