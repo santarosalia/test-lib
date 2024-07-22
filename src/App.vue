@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { WButton, WIcon, WBadge, WToggle } from "@lib";
+import { WButton, WIcon, WBadge, WToggle, WTypography } from "@lib";
 import { blue } from "@lib";
 </script>
 
@@ -53,6 +53,11 @@ import { blue } from "@lib";
     </WBadge>
     <WToggle></WToggle>
   </div>
+  <div class="typo">
+    Typo
+    <WTypography level="display1">Display1</WTypography>
+    <WTypography level="display2">Display2</WTypography>
+  </div>
 </template>
 
 <style scoped>
@@ -67,6 +72,10 @@ import { blue } from "@lib";
 }
 .bgroup {
   display: flex;
+}
+.typo {
+  display: flex;
+  flex-direction: column
 }
 button {
   margin: 5px;
