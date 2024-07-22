@@ -13,7 +13,7 @@ const baseClassName = css({
     ':disabled': {
         cursor: 'not-allowed'
     },
-    border: 'none'
+    textWrap:'nowrap'
 });
 const styleClassName = css(style);
 const sizeClassName = css(size);

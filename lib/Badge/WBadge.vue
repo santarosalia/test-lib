@@ -1,17 +1,15 @@
 <script setup lang="ts">
     import { css } from '@emotion/css';
+import { blue, gray } from '@lib/Color/config';
     const className = css({
-        display: 'inline-flex',
+        display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'blue',
+        backgroundColor: blue[700],
         borderRadius: '50px',
-        color: 'white',
-        minHeight:'13px',
-        minWidth: '3px',
+        color: gray['white'],
+        height:'20px',
         padding: '1px 6px',
-        fontSize: '12px',
-        fontWeight: '500',
     });
        
 </script>

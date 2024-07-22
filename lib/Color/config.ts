@@ -1,4 +1,4 @@
-import { Blue, Gray, Green } from "./interface"
+import { Blue, Gray, Green, Red, Yellow } from "./interface"
 
 export const gray: Gray = {
     white: '#FFFFFF',
@@ -44,8 +44,32 @@ export const green: Green = {
     800: '#31B95A'
 }
 
+export const red: Red = {
+    100: '#FFF5F5',
+    200: '#FFE5E5',
+    300: '#FFCCCC',
+    400: '#FFB2B2',
+    500: '#FF9999',
+    600: '#FF6B6B',
+    700: '#DD4040',
+    800: '#BF2B2B'
+}
+
+export const yellow: Yellow = {
+    100: '#FFFBEB',
+    200: '#FFF6D1',
+    300: '#FFF1B8',
+    400: '#FFEC9E',
+    500: '#FFE88A',
+    600: '#F8D95D',
+    700: '#BA9608',
+    800: '#987B06'
+}
+
 export const color = {
     gray,
     blue,
-    green
+    green,
+    red,
+    yellow
 }

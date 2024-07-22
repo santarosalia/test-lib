@@ -4,6 +4,7 @@ export const wButtonStyle: WButtonStyle = {
     filled: {
         color: gray['white'],
         backgroundColor: blue[700],
+        border: 'none',
         ':hover': {
             color: gray['white'],
             backgroundColor: blue[800]

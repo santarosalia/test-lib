@@ -49,7 +49,7 @@ import { blue } from "@lib";
   </div>
   <div class="bgroup">
     <WBadge>
-      
+      N
     </WBadge>
     <WToggle></WToggle>
   </div>
