@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { WButton, WIcon, WBadge, WToggle, WTypography, WPaper, WInput, WTextarea } from "@lib";
+import { WButton, WIcon, WBadge, WToggle, WTypography, WPaper, WInput, WTextarea, WSelect } from "@lib";
 import { typography } from "@lib/Typography/config";
 import { Level } from "@lib/Typography/interface";
 import { reactive, ref, watch } from "vue";
@@ -13,6 +13,7 @@ const toggle = ref(false);
 const ch = () => {
   console.log(toggle.value)
 }
+const select = ref('b');
 </script>
 
 <template>
@@ -81,6 +82,7 @@ const ch = () => {
   </WButton>
   <WInput error :msg="'aga'" v-model="o" showCount></WInput>
   <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
+  <WSelect v-model="select" :optionList="['a','b','c','d']" ></WSelect>
 </template>
 
 <style scoped>

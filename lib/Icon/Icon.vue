@@ -21,12 +21,12 @@ const pathClassName = computed(() => {
 })
 </script>
 <template>
-    <!-- <svg
+    <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         :class="svgClassName"
     >
         <path  fill-rule="evenodd" clip-rule="evenodd" v-for="d in dList" :d="d" :class="pathClassName"/>
-    </svg> -->
-    <viewCard></viewCard>
+    </svg>
+    <!-- <viewCard></viewCard> -->
 </template>
