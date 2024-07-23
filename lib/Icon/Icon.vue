@@ -4,6 +4,7 @@ import { icon } from './config'
 import { IconProps } from './interface';
 import { color } from '@lib/Color/config';
 import { computed } from 'vue';
+import viewCard from './Icon=view_card.svg?component';
 const props = defineProps<IconProps>();
 
 const dList = computed(() => icon[props.icon]);
@@ -20,11 +21,12 @@ const pathClassName = computed(() => {
 })
 </script>
 <template>
-    <svg
+    <!-- <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         :class="svgClassName"
     >
         <path  fill-rule="evenodd" clip-rule="evenodd" v-for="d in dList" :d="d" :class="pathClassName"/>
-    </svg>
+    </svg> -->
+    <viewCard></viewCard>
 </template>
