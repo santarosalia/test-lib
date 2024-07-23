@@ -35,9 +35,8 @@ export enum GrayCode {
     black = '#000000'
 }
 
-export type Gray = {
-    [color in GrayKey]: GrayCode[keyof GrayCode]
-}
+export type Gray = Record<GrayKey,GrayCode>
+
 
 /**
 * ![blue 50](https://mui.com/static/colors-preview/blue-50-24x24.png) d
@@ -72,10 +71,7 @@ export enum BlueCode {
     blue900= '#0341A3',
     blue1000= '#306597'
 }
-
-export type Blue = {
-    [color in BlueKey]: BlueCode[keyof BlueCode]
-}
+export type Blue = Record<BlueKey,BlueCode>;
 
 export enum GreenKey {
     green100 = 'green100',
@@ -99,9 +95,7 @@ export enum GreenCode {
     green800 = '#31B95A'
 }
 
-export type Green = {
-    [color in GreenKey]: GreenCode[keyof GreenCode]
-}
+export type Green = Record<GreenKey,GreenCode>;
 
 export enum RedKey {
     red100='red100',
@@ -126,9 +120,7 @@ export enum RedCode {
     wrong = '#FF0000'
 }
 
-export type Red = {
-    [color in RedKey]: RedCode[keyof RedCode]
-}
+export type Red = Record<RedKey,RedCode>;
 
 export enum  YellowKey {
     yellow100='yellow100',
@@ -152,9 +144,7 @@ export enum YellowCode {
     yellow800 = '#987B06'
 }
 
-export type Yellow = {
-    [color in YellowKey]: YellowCode[keyof YellowCode]
-}
+export type Yellow = Record<YellowKey,YellowCode>;
 
 
 export type Color = keyof typeof GrayKey | keyof typeof BlueKey | keyof typeof GreenKey | keyof typeof RedKey | keyof typeof YellowKey

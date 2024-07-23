@@ -16,7 +16,7 @@ import {
     Yellow,
 } from "./interface"
 
-const gray = Object.keys(GrayKey).reduce((acc, cur) => {
+const gray = Object.keys(GrayKey).reduce<Gray>((acc, cur) => {
     const key = cur as GrayKey;
     acc[key] = GrayCode[key];
     return acc;

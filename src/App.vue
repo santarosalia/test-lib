@@ -77,7 +77,7 @@ const click = () => {
     <template #default>body</template>
   </WPaper>
   <WButton size="sm" variant="filled" @click="click">
-    <WIcon icon="rotate" color="blue300" ></WIcon>
+    <WIcon icon="rotate" color="red200" ></WIcon>
   </WButton>
   <WInput error :msg="'aga'" v-model="o" showCount></WInput>
   <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
