@@ -2,7 +2,7 @@
 import { WButton, WIcon, WBadge, WToggle, WTypography, WPaper, WInput, WTextarea } from "@lib";
 import { typography } from "@lib/Typography/config";
 import { Level } from "@lib/Typography/interface";
-import { reactive, ref } from "vue";
+import { reactive, ref, watch } from "vue";
 const typographyKeyList = Object.keys(typography) as Level[];
 const isError = ref(false);
 const msg = ref('');
@@ -12,7 +12,10 @@ const click = () => {
   // msg.value =  msg.value === 'abc'? 'ffff' : 'abc'
   console.log(o)
 }
-
+const toggle = ref(false);
+const ch = () => {
+  console.log(toggle.value)
+}
 </script>
 
 <template>
@@ -63,7 +66,7 @@ const click = () => {
     <WBadge>
       N
     </WBadge>
-    <WToggle></WToggle>
+    <WToggle v-model="toggle" @change="ch"></WToggle>
   </div>
   <div class="typo">
     Typography

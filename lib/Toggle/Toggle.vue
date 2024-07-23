@@ -27,7 +27,9 @@ const className = css({
         }
     }
 });
+const model = defineModel();
+
 </script>
 <template>
-    <input type="checkbox" :class="className"></input>
+    <input type="checkbox" :class="className" v-model="model"></input>
 </template>
