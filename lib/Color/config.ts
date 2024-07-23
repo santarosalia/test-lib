@@ -1,70 +1,50 @@
-import { Blue, BlueColor, Color, Gray, GrayColor, Green, GreenColor, Red, RedColor, Yellow, YellowColor } from "./interface"
+import { 
+    BlueKey,
+    BlueCode,
+    Blue,
+    GrayCode,
+    GrayKey,
+    Gray,
+    GreenKey,
+    GreenCode,
+    Green,
+    RedKey,
+    RedCode,
+    Red,
+    YellowKey,
+    YellowCode,
+    Yellow,
+} from "./interface"
 
-const gray: GrayColor = {
-    [Gray.white]: '#FFFFFF',
-    [Gray.gray100]: '#FCFCFC',
-    [Gray.gray200]: '#F5F5F5',
-    [Gray.gray300]: '#F0F0F0',
-    [Gray.gray400]: '#DCDCDC',
-    [Gray.gray500]: '#C8C8C8',
-    [Gray.gray600]: '#B4B4B4',
-    [Gray.gray700]: '#8C8C8C',
-    [Gray.gray800]: '#787878',
-    [Gray.gray900]: '#646464',
-    [Gray.gray1000]: '#505050',
-    [Gray.gray1100]: '#3C3C3C',
-    [Gray.gray1200]: '#282828',
-    [Gray.gray1300]: '#141414',
-    [Gray.black]: '#000000'
-}
-/**
-* ![blue 50](https://mui.com/static/colors-preview/blue-50-24x24.png) d
-*/
-const blue: BlueColor = {
-    [Blue.blue100]: '#F5F7F9',
-    [Blue.blue200]: '#F5FAFF',
-    [Blue.blue300]: '#EBF4FF',
-    [Blue.blue400]: '#DBEDFF',
-    [Blue.blue500]: '#8FBFFF',
-    [Blue.blue600]: '#388EFF',
-    [Blue.blue700]: '#0A64FA',
-    [Blue.blue800]: '#0452CF',
-    [Blue.blue900]: '#0341A3',
-    [Blue.blue1000]: '#306597'
-}
+const gray = Object.keys(GrayKey).reduce((acc, cur) => {
+    const key = cur as GrayKey;
+    acc[key] = GrayCode[key];
+    return acc;
+}, {} as Gray);
 
-const green: GreenColor = {
-    [Green.green100]: '#F5FFF8',
-    [Green.green200]: '#E5FFED',
-    [Green.green300]: '#CCFFDB',
-    [Green.green400]: '#B2FFC9',
-    [Green.green500]: '#99FFB8',
-    [Green.green600]: '#80FFA6',
-    [Green.green700]: '#5BE384',
-    [Green.green800]: '#31B95A'
-}
+const blue = Object.keys(BlueKey).reduce((acc, cur) => {
+    const key = cur as BlueKey;
+    acc[key] = BlueCode[key];
+    return acc;
+}, {} as Blue);
 
-const red: RedColor = {
-    [Red.red100]: '#FFF5F5',
-    [Red.red200]: '#FFE5E5',
-    [Red.red300]: '#FFCCCC',
-    [Red.red400]: '#FFB2B2',
-    [Red.red500]: '#FF9999',
-    [Red.red600]: '#FF6B6B',
-    [Red.red700]: '#DD4040',
-    [Red.red800]: '#BF2B2B'
-}
+const green = Object.keys(GreenKey).reduce((acc, cur) => {
+    const key = cur as GreenKey;
+    acc[key] = GreenCode[key];
+    return acc;
+}, {} as Green);
 
-const yellow: YellowColor = {
-    [Yellow.yellow100]: '#FFFBEB',
-    [Yellow.yellow200]: '#FFF6D1',
-    [Yellow.yellow300]: '#FFF1B8',
-    [Yellow.yellow400]: '#FFEC9E',
-    [Yellow.yellow500]: '#FFE88A',
-    [Yellow.yellow600]: '#F8D95D',
-    [Yellow.yellow700]: '#BA9608',
-    [Yellow.yellow800]: '#987B06'
-}
+const red = Object.keys(RedKey).reduce((acc, cur) => {
+    const key = cur as RedKey;
+    acc[key] = RedCode[key];
+    return acc;
+}, {} as Red);
+
+const yellow = Object.keys(YellowKey).reduce((acc, cur) => {
+    const key = cur as YellowKey;
+    acc[key] = YellowCode[key];
+    return acc;
+}, {} as Yellow);
 
 export const color = {
     ...gray,

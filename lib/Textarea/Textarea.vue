@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { css } from '@emotion/css';
 import { color } from '@lib/Color/config';
-import { InputProps } from './interface';
+import { TextareaProps } from './interface';
 import { computed } from 'vue';
 import { typography } from '@lib/Typography/config';
 
-const props = defineProps<InputProps>();
+const props = defineProps<TextareaProps>();
 const containerClassName = css({
     display: 'flex',
     flexDirection: 'column',
@@ -20,7 +20,7 @@ const baseClassName = computed(()=> {
         border: `1px solid ${props.error ? color.red600 : color.gray400}`,
         borderRadius: '4px',
         ':focus': {
-            borderColor: props.error ? color.red600 : color.blue600,
+            borderColor: color.blue600,
             outline: 'none'
         },
         ':disabled': {
@@ -42,7 +42,7 @@ const model = defineModel<string>();
 </script>
 <template>
     <div :class="containerClassName">
-        <input :class="baseClassName" v-bind="$attrs" v-model="model">
+        <textarea :class="baseClassName" v-bind="$attrs" v-model="model"></textarea>
         <span :class="msgClassName">
             <span>{{ props.msg }}</span>
             <span v-if="showCount && $attrs.maxlength">

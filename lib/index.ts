@@ -3,6 +3,7 @@ import Badge from './Badge/Badge.vue'
 import Toggle from '@lib/Toggle/Toggle.vue'
 import Button from './Button/Button.vue'
 import Input from './Input/Input.vue'
+import Textarea from './Textarea/Textarea.vue'
 import Typography from './Typography/Typography.vue'
 import Paper from './Paper/Paper.vue'
 import { color } from '@lib/Color/config'
@@ -16,5 +17,6 @@ export {
     Typography as WTypography,
     Paper as WPaper,
     Input as WInput,
+    Textarea as WTextarea,
     color as WColor
 }
