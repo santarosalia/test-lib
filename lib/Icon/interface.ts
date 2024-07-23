@@ -6,5 +6,5 @@ export interface IconProps {
     width?: string,
     height?: string
 }
-type Icon = keyof typeof icon;
+export type Icon = keyof typeof icon;
 

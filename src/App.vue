@@ -4,12 +4,9 @@ import { typography } from "@lib/Typography/config";
 import { Level } from "@lib/Typography/interface";
 import { reactive, ref, watch } from "vue";
 const typographyKeyList = Object.keys(typography) as Level[];
-const isError = ref(false);
-const msg = ref('');
+
 const o = ref('abcdef');
 const click = () => {
-  // isError.value = !isError.value;
-  // msg.value =  msg.value === 'abc'? 'ffff' : 'abc'
   console.log(o)
 }
 const toggle = ref(false);
@@ -80,7 +77,7 @@ const ch = () => {
     <template #default>body</template>
   </WPaper>
   <WButton size="sm" variant="filled" @click="click">
-    <WIcon icon="rotate" color="red200" ></WIcon>
+    <WIcon icon="viewcard" color="red200" ></WIcon>
   </WButton>
   <WInput error :msg="'aga'" v-model="o" showCount></WInput>
   <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>

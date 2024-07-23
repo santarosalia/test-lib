@@ -42,7 +42,7 @@ const model = defineModel<string>();
 </script>
 <template>
     <div :class="containerClassName">
-        <input :class="baseClassName" v-bind="$attrs" v-model="model">
+        <input :class="baseClassName" v-bind="$attrs" v-model="model"/>
         <span :class="msgClassName">
             <span>{{ props.msg }}</span>
             <span v-if="showCount && $attrs.maxlength">

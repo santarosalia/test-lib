@@ -27,7 +27,7 @@ const className = css({
         }
     }
 });
-const model = defineModel();
+const model = defineModel<boolean>();
 
 </script>
 <template>
