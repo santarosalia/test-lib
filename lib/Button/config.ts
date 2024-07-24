@@ -59,7 +59,7 @@ export const buttonSize: ButtonSize = {
     },
     sm: {
         height: '28px',
-        padding: '4px 12px',
+        padding: '4px 10px',
         borderRadius: '4px',
     }
 }
