@@ -13,7 +13,7 @@ const toggle = ref(false);
 const ch = () => {
   console.log(toggle.value)
 }
-const select = ref('b');
+const select = ref('h');
 </script>
 
 <template>
@@ -82,7 +82,13 @@ const select = ref('b');
   </WButton>
   <WInput error :msg="'aga'" v-model="o" showCount></WInput>
   <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
-  <WSelect v-model="select" :optionList="['a','b','c','d']" ></WSelect>
+  <div style="width: 30%">
+    <WSelect v-model="select" :optionList="['a','b','c','d','e','f','g','h']" ></WSelect>
+  </div>
+  <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
+  <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
+  <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
+  <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
 </template>
 
 <style scoped>
