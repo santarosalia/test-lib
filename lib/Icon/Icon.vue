@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import { css } from '@emotion/css';
-import { icon } from './config'
+import { iconData } from './config'
 import { IconProps } from './interface';
 import { color } from '@lib/Color/config';
 import { computed } from 'vue';
-import viewCard from './Icon=view_card.svg?component';
 const props = defineProps<IconProps>();
 
-const dList = computed(() => icon[props.icon]);
+const dataList = computed(() => iconData[props.icon]);
 const width = props.width ?? '24px';
 const height = props.height ?? '24px';
 const svgClassName = css({
@@ -16,9 +15,11 @@ const svgClassName = css({
 });
 const pathClassName = computed(() => {
     return css({
-        fill: color[props.color],
+        '& path' : {
+            fill: color[props.color],
+        }
     });
-})
+});
 </script>
 <template>
     <svg
@@ -26,7 +27,6 @@ const pathClassName = computed(() => {
         viewBox="0 0 24 24"
         :class="svgClassName"
     >
-        <path  fill-rule="evenodd" clip-rule="evenodd" v-for="d in dList" :d="d" :class="pathClassName"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" v-for="data in dataList" :d="data" :class="pathClassName"/>
     </svg>
-    <!-- <viewCard></viewCard> -->
 </template>
