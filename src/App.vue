@@ -66,10 +66,11 @@ const select = ref('h');
     </WBadge>
     <WToggle v-model="toggle" @change="ch"></WToggle>
   </div>
-  <div class="typo">
+  <div class="group">
     Typography
     <WTypography v-for="key in typographyKeyList" :level="key">{{key}}</WTypography>
   </div>
+  <div class="group">
   <WPaper>
     <template #header>header</template>
     <template #default>body</template>
@@ -82,13 +83,12 @@ const select = ref('h');
   </WButton>
   <WInput error :msg="'aga'" v-model="o" showCount></WInput>
   <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
-  <div style="width: 30%">
-    <WSelect v-model="select" :optionList="['a','b','c','d','e','f','g','h']" ></WSelect>
+  <WSelect v-model="select" :optionList="['a','b','c','d','e','f','g','h']" ></WSelect>
+  <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
+  <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
+  <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
+  <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
   </div>
-  <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
-  <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
-  <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
-  <WTextarea disabled v-model="o" msg="messssssssssssssssssage" showCount maxlength="20"></WTextarea>
 </template>
 
 <style scoped>
